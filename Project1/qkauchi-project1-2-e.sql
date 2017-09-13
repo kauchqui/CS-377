@@ -1,0 +1,2 @@
+use imdb; 
+select distinct actor.fname, actor.lname from actor,director,casts, movie_director, movie where movie.id = movie_director.mid and actor.id = aid and director.id = did and director.fname = 'Woody' and director.lname = 'Allen' order by Actor.fname;
